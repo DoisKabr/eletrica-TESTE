@@ -24,7 +24,7 @@ export default function secaoNav() {
                     <div className={estilo.xNav}
                     
                     style={{
-                        transform: fechaAbrir ? "rotate(90deg) translateY(-10px)" : "rotate(0deg) translateY(0px)"
+                        transform: fechaAbrir ? "rotate(90deg) translateY(-1px)" : "rotate(0deg) translateY(0px)"
                     }}
                     
                     onClick={() => { !fechaAbrir ? setFecharAbrir(true) : setFecharAbrir(false) }}>{fechaAbrir ? <img src="/icons/exit.svg" alt="sair" /> : <img src="/icons/menu.svg" alt="menu" />}</div>
