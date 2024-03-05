@@ -114,7 +114,7 @@
     .secaoNav>.divOrganizaNav {
         position: fixed;
         top: 0;
-        right: 0;
+        right: 0vw;
         display: flex;
         align-items: start;
         justify-content: center;
