@@ -101,7 +101,6 @@
     .secaoHeader .alicate {
         position: absolute;
         max-width: 100px;
-        transform: translateX(40vw) translateY(2vh);
         z-index: -1;
     }
 
@@ -131,11 +130,11 @@
     /*- Animação Alicate -*/
     @keyframes animaCimaBaixo {
         from {
-            transform: translateX(40vw) translateY(2vh);
+            transform: translateX(30vw) translateY(2vh);
         }
 
         to {
-            transform: translateX(40vw) translateY(2.5vh);
+            transform: translateX(30vw) translateY(2.5vh);
         }
     }
 }
