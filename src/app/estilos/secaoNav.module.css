@@ -1,0 +1,164 @@
+.secaoNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 6vh;
+
+    padding: 0rem 1rem;
+
+    z-index: 10;
+}
+
+.secaoNav::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(180deg,
+            var(--cor-preto) 10%,
+            transparent 100%);
+
+    z-index: 2;
+}
+
+.secaoNav>.divOrganizaNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.xNav>img {
+    display: none;
+}
+
+
+.secaoNav>.divOrganizaNav>div>img {
+    width: 50px;
+}
+
+.secaoNav div,
+.secaoNav>.divOrganizaNav>nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    z-index: 3;
+}
+
+.secaoNav div a,
+.secaoNav .divOrganizaNav nav .navA {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--cor-amarelo2);
+    min-width: 130px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.secaoNav div img {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.secaoNav .divOrganizaNav nav .navA {
+    background-color: var(--cor-preto);
+    height: 100%;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.secaoNav .divOrganizaNav nav .navA:hover {
+    background-color: transparent;
+}
+
+.divOrganizaNav>nav>.aDesligadoNoPc {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .secaoNav {
+        padding: 0rem 0rem;
+    }
+
+    .secaoNav::before {
+        background: var(--cor-preto);
+    }
+
+    .secaoNav div,
+    .secaoNav .divOrganizaNav nav {
+        gap: 0px;
+    }
+
+    .secaoNav div a,
+    .secaoNav .divOrganizaNav nav .navA {
+        font-size: 1rem;
+        min-width: 80%;
+        height: 100%;
+    }
+
+    .secaoNav>.divOrganizaNav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
+
+        z-index: 3;
+    }
+
+    .secaoNav>.divOrganizaNav>.xNav>img {
+        display: block;
+    }
+    .secaoNav>.divOrganizaNav>.xNav {
+        background-color: var(--cor-preto);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        padding: .2em;
+    }
+
+    .secaoNav>.divOrganizaNav>nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        width: 70vw;
+        height: 100vh;
+
+        background-color: rgba(000, 000, 000, .7);
+
+        z-index: 3;
+    }
+
+    .secaoNav .divOrganizaNav>nav>.navA {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor-amarelo3);
+        color: #fff;
+        font-size: 5vw;
+        height: auto;
+
+        padding: 1vh;
+
+        border-radius: 20px;
+    }
+
+    .secaoNav .divOrganizaNav>nav>.aDesligadoNoPc {
+        display: flex;
+    }
+}

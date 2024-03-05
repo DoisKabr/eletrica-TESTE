@@ -1,0 +1,25 @@
+:root {
+    --cor-preto: #1D1826;
+    --cor-amarelo1: #F2CF1D;
+    --cor-amarelo2: #f2bc1b;
+    --cor-amarelo3: #f2a81d;
+    --cor-amarelo4: #d9751e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../../public/images/predio.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow-x: hidden;
+}

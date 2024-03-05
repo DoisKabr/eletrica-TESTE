@@ -1,0 +1,245 @@
+.secaoNormas {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5em;
+
+    width: 100%;
+
+    padding: 5em 0em;
+
+    background-color: var(--cor-amarelo2);
+
+    overflow: hidden;
+}
+
+.secaoNormas p {
+    width: 20vw;
+    height: 1px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.secaoNormas section {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 60vh;
+
+
+    background-image: url("../../../public/images/eletricista/02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 20px;
+
+    filter: drop-shadow(0px 0px 5px var(--cor-preto));
+
+    overflow: hidden;
+
+    perspective: 300px;
+
+    transition: all 5s ease;
+
+    z-index: 2;
+}
+
+.secaoNormas section .barra1 {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 5%;
+    height: 79%;
+    background-color: var(--cor-amarelo3);
+}
+
+.secaoNormas section .barra2 {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 5%;
+    height: 45%;
+    height: 55%;
+    background-color: var(--cor-amarelo3);
+}
+
+.secaoNormas section .barra3 {
+    position: absolute;
+    top: 0;
+    left: 18%;
+    width: 5%;
+    height: 70%;
+    background-color: var(--cor-amarelo3);
+}
+
+.secaoNormas section .barra4 {
+    position: absolute;
+    top: 0;
+    left: 26%;
+    width: 5%;
+    height: 45%;
+    background-color: var(--cor-amarelo3);
+}
+
+.secaoNormas section .barra5 {
+    position: absolute;
+    top: 0;
+    left: 34%;
+    width: 5%;
+    height: 20%;
+    background-color: var(--cor-amarelo3);
+}
+
+/*- Seção informações e Animações -*/
+
+.secaoNormas section .informações {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-amarelo2);
+
+    width: 100%;
+    max-width: 500px;
+
+    padding: 1.5rem;
+    margin-left: 2rem;
+
+    background-color: var(--cor-amarelo4);
+    border-radius: 20px;
+
+    filter: drop-shadow(0px 0px 3px #363636);
+
+    animation: animaCimaBaixo 3s ease infinite alternate;
+
+    z-index: 1;
+}
+
+.secaoNormas section .informações h3 {
+    color: #fff;
+}
+
+@keyframes animaCimaBaixo {
+    from {
+        transform: translateY(-2px);
+    }
+
+    to {
+        transform: translateY(2px);
+    }
+}
+
+/*- Fim da Seção informações e Animações -*/
+
+/*- Animações de fundo -*/
+
+.secaoNormas>div:nth-child(3) {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: var(--cor-amarelo3);
+
+    border-radius: 10px;
+
+    animation: animaDivRodar1 20s infinite;
+}
+
+.secaoNormas>div:nth-child(4) {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+
+    width: 250px;
+    height: 250px;
+
+    background-color: var(--cor-amarelo3);
+
+    border-radius: 10px;
+
+    animation: animaDivRodar2 60s infinite;
+}
+
+.secaoNormas>div:nth-child(5) {
+    position: absolute;
+    top: 5%;
+    left: 70%;
+
+    width: 250px;
+    height: 250px;
+
+    background-color: var(--cor-amarelo3);
+
+    border-radius: 10px;
+
+    animation: animaDivRodar3 120s infinite;
+}
+
+.secaoNormas>div:nth-child(6) {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+
+    width: 500px;
+    height: 500px;
+
+    background-color: var(--cor-amarelo3);
+
+    border-radius: 10px;
+
+    animation: animaDivRodar4 120s infinite;
+}
+
+@keyframes animaDivRodar1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animaDivRodar2 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animaDivRodar3 {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes animaDivRodar4 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*- Fim das animações de fundo -*/

@@ -1,0 +1,266 @@
+.secaoComoAtuamos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+
+    padding: 5em 0em;
+
+    background-color: var(--cor-preto);
+}
+
+.secaoComoAtuamos p {
+    width: 20vw;
+    height: 1px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-amarelo1);
+    background-color: var(--cor-amarelo1);
+}
+
+.secaoComoAtuamos section {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 60vh;
+
+
+    background-image: url("../../../public/images/eletricista/01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.secaoComoAtuamos section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 2.5em;
+    color: var(--cor-amarelo2);
+    z-index: 1;
+
+    padding-left: 2rem;
+
+    background-color: rgba(000, 000, 000, .5);
+
+    border-bottom: 10px solid var(--cor-amarelo4);
+    border-bottom-right-radius: 5px;
+}
+
+.secaoComoAtuamos section>div {
+    position: relative;
+    top: 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10%;
+}
+
+.secaoComoAtuamos section>div>div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    border-radius: 10%;
+
+    background-color: rgba(000, 000, 000, .2);
+
+    filter: drop-shadow(0px 0px 3px #363636);
+
+    transform: rotate(35deg) translateX(-10vw) translateY(10vw);
+}
+
+.secaoComoAtuamos section>div>div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    border-radius: 10%;
+
+    filter: drop-shadow(0px 0px 3px #363636);
+
+    background-color: rgba(242, 188, 27, 1);
+
+    transform: rotate(35deg) translateX(-0vw) translateY(0vw);
+}
+
+.secaoComoAtuamos section>div>div:nth-child(3) {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    border-radius: 10%;
+
+    background-color: var(--cor-amarelo3);
+
+    filter: drop-shadow(0px 0px 3px #363636);
+
+    transform: rotate(35deg) translateX(10vw) translateY(-10vw);
+}
+
+.secaoComoAtuamos section>div>div:nth-child(4) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+    width: 100%;
+    min-height: 50px;
+
+    padding: 1.5rem;
+
+    background-color: var(--cor-amarelo4);
+    color: #fff;
+
+    filter: drop-shadow(0px 0px 3px #363636);
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    animation: animaCimaBaixo 3s ease infinite alternate;
+
+    z-index: 3;
+}
+
+@keyframes animaCimaBaixo {
+    from {
+        transform: translateY(-2px);
+    }
+
+    to {
+        transform: translateY(2px);
+    }
+}
+
+@media (max-width: 900px) {
+    .secaoComoAtuamos section {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        width: 100%;
+        max-width: 1200px;
+        min-height: 70vh;
+
+        padding: .5rem;
+
+        border-radius: 0px;
+
+        overflow: hidden;
+    }
+
+    .secaoComoAtuamos section h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vw;
+
+        padding-left: 0rem;
+        padding: .3rem;
+
+        background-color: rgba(000, 000, 000, .5);
+
+        border-bottom: 1px solid var(--cor-amarelo4);
+        border-radius: 5px;
+    }
+
+    .secaoComoAtuamos section>div {
+        position: relative;
+        top: 0;
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 10%;
+    }
+
+    .secaoComoAtuamos section>div>div:nth-child(1) {
+        position: absolute;
+        top: 0;
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: 100%;
+        transform: rotate(35deg) translateX(-10vw) translateY(10vw);
+    }
+
+    .secaoComoAtuamos section>div>div:nth-child(2) {
+        position: absolute;
+        top: 0;
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: 100%;
+        transform: rotate(35deg) translateX(-0vw) translateY(0vw);
+    }
+
+    .secaoComoAtuamos section>div>div:nth-child(3) {
+        position: absolute;
+        top: 0;
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: 100%;
+        transform: rotate(35deg) translateX(10vw) translateY(-10vw);
+    }
+
+    .secaoComoAtuamos section>div>div:nth-child(4) {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: justify;
+        gap: 20px;
+
+        width: 100%;
+        min-height: 0%;
+
+        padding: 1.5rem;
+        margin: 1rem;
+
+        background-color: var(--cor-amarelo4);
+        color: #fff;
+
+        filter: drop-shadow(0px 0px 3px #363636);
+
+        border-radius: 20px;
+
+        animation: animaCimaBaixo 3s ease infinite alternate;
+
+        z-index: 3;
+    }
+
+    .secaoComoAtuamos section>div>div:nth-child(4)>h5:nth-child(3) {
+        display: none;
+    }
+
+    .secaoComoAtuamos section>div>div:nth-child(4)>ul {
+        display: none;
+    }
+}
